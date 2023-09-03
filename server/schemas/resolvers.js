@@ -1,5 +1,6 @@
 const { AuthenticationError } = require('apollo-server-express');
 const { User, Category, Favorite, Image } = require('../models');
+const fetch = import('node-fetch');
 const { signToken } = require('../utils/auth');
 
 const resolvers = {
@@ -96,18 +97,15 @@ const resolvers = {
   // Resolver for adding a new image to the database and fetching its details from Unsplash API
   addImageAndFetchDetails: async (parent, { unsplashId }) => {
     const apiUrl = `https://api.unsplash.com/photos/${unsplashId}?client_id=${process.env.UNSPLASH_API_KEY}`;
-
     try {
       const response = await fetch(apiUrl);
       const imageData = await response.json();
-
       // Save the image details to database
       const newImage = await Image.create({
         unsplashId: imageData.id,
         imageUrl: imageData.urls.regular,
         description: imageData.description,
       });
-
       return newImage;
     } catch (error) {
       console.error('Error fetching image details from Unsplash:', error);
@@ -116,5 +114,4 @@ const resolvers = {
   },
 },
 };
-
 module.exports = resolvers;
