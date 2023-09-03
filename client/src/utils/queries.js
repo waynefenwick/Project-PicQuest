@@ -77,6 +77,7 @@ export const QUERY_IMAGE = gql`
     }
   }
 `;
+
 export const QUERY_UNSPLASH_IMAGES = gql`
   query getUnsplashImages($category: String!) {
     unsplashImages(category: $category) {

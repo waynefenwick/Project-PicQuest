@@ -88,7 +88,6 @@ function NavLink() {
   return (
     <>
       <div id="navbar-container">
-
         <section id="navbar">
           <ul className="navbar-links">
             <li>
@@ -132,7 +131,6 @@ function NavLink() {
         <div id="navbar-overlay"></div>
 
         <section id="navbar-buttons">
-
           <div className="navbar-login-signup">
             {isLoggedIn ? (
               <button className="logout-button" onClick={handleLogout}>
@@ -181,4 +179,5 @@ function NavLink() {
     </>
   );
 }
+
 export default NavLink;
