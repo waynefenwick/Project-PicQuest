@@ -31,23 +31,23 @@ To view the "PicQuest" application, please click the URL provided below.
 
 To use this application, please sign up for an account by clicking the orange "Sign Up" button located at the top right of the screen. The orange "Sign Up" button can be seen with a yellow rectangle around it in the image below.
 
-![alt text](/client/src/media/README-Usage-Guide-Sign-Up.png)
+![alt text](/client/src/Media/README-Usage-Guide-Sign-Up.png)
 
 Once you have signed up, you will be able to log in to the account by selecting the orange "Log In" page located at the top right of the screen. The orange "Log In" button can be seen with a yellow rectangle around it in the image below.
 
-![alt text](/client/src/media/README-Usage-Guide-Log-In.png)
+![alt text](/client/src/Media/README-Usage-Guide-Log-In.png)
 
 If you would like to view photos by categories, please select one of the seven categories available in the navigation bar which can be seen with yellow rectangles around them in the image below.
 
-![alt text](/client/src/media/README-Usage-Guide-Categories.png)
+![alt text](/client/src/Media/README-Usage-Guide-Categories.png)
 
 If you would like to search for photos of a particular category, please search for the category of your choice in the search bar located at the top right of the screen. The search bar can be seen with a yellow rectangle around it in the image below.
 
-![alt text](/client/src/media/README-Usage-Guide-Search-Bar.png)
+![alt text](/client/src/Media/README-Usage-Guide-Search-Bar.png)
 
 Once you find a photo you like, please select the blue "Add to Favorites" button to add the photo to your favorites. The blue "Add to Favorites" button can be seen with a yellow rectangle around it in the image below.
 
-![alt text](/client/src/media/README-Usage-Guide-Add-to-Favorites.png)
+![alt text](/client/src/Media/README-Usage-Guide-Add-to-Favorites.png)
 
 ## Credits
 
