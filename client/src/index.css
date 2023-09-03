@@ -156,8 +156,8 @@ body, ul {
   padding: 5px;
   border: none;
   border-radius: 4px;
-  width: 50%;
-  margin: 0px 2.5px 0px 2.5px;
+  width: 100%;
+  margin: 0px 0px 0px 20px;
 
 }
 
@@ -170,7 +170,8 @@ body, ul {
 .login-button,
 .logout-button,
 .signup-button,
-.search-button {
+.search-button
+.tab-link {
   background-color: var(--orange);
   border: none;
   color: var(--white);

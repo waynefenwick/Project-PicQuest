@@ -116,25 +116,23 @@ function NavLink() {
               <Link to="/tab7" className={activeLink === 'tab7' ? 'active' : ''} onClick={() => handleNavLinkClick('tab7')}>Relaxing</Link>
             </li>
             <li>
-              <Link to="/tab8" className={activeLink === 'tab8' ? 'active' : ''} onClick={() => handleNavLinkClick('tab8')}>Search</Link>
+              <Link to="/tab8" className={`tab-link ${activeLink === 'tab8' ? 'active' : ''}`}onClick={() => handleNavLinkClick('tab8')}>Search</Link>
             </li>
           </ul>
+          <div className="navbar-search">
+            <input
+              type="text"
+              placeholder="Searching for..."
+              value={searchQuery}
+              onChange={(event) => setSearchQuery(event.target.value)}
+            />
+          </div>
         </section>
 
         <div id="navbar-overlay"></div>
 
         <section id="navbar-buttons">
-          <div className="navbar-search">
-          <button className="search-button" onClick={() => performSearch(searchQuery)}>
-              Search
-            </button>
-            <input
-              type="text"
-              placeholder="Search..."
-              value={searchQuery}
-              onChange={(event) => setSearchQuery(event.target.value)}
-            />
-          </div>
+
           <div className="navbar-login-signup">
             {isLoggedIn ? (
               <button className="logout-button" onClick={handleLogout}>
