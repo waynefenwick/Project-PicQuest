@@ -3,7 +3,7 @@ import { useQuery } from '@apollo/client';
 import { QUERY_UNSPLASH_IMAGES } from '../../utils/queries';
 
 function Unusual () {
-     const { loading, error, data } = useQuery(QUERY_UNSPLASH_IMAGES, {
+      const { loading, error, data } = useQuery(QUERY_UNSPLASH_IMAGES, {
           variables: { category: 'unusual' },
         });
       
